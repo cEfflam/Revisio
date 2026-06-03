@@ -4,6 +4,7 @@ import Library from './pages/Library'
 import Quiz from './pages/Quiz'
 import Analytics from './pages/Analytics'
 import Profile from './pages/Profile'
+import Login from "./pages/Login"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <main className="flex-1 max-w-md w-full mx-auto pb-24">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/library" element={<Library />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/analytics" element={<Analytics />} />
